@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FreshBites Market - Modern Food & Drink Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Space Grotesk', Arial, sans-serif;
+    }
+    .cta-button {
+      border-radius: 0.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#111111]">
+  <!-- Hero Section -->
+  <section class="container mx-auto py-24 bg-gradient-to-br from-[#111111] to-[#08372b] flex flex-col items-center justify-center">
+    <div class="text-center max-w-4xl px-6">
+      <h1 class="text-5xl font-extrabold text-[#ffffff] mb-4">FreshBites Market</h1>
+      <p class="text-2xl text-[#80c0b0] mb-10">Discover the best in everyday nutrition</p>
+      <button class="cta-button hero-button text-2xl px-8 py-3 bg-[#008060] hover:bg-[#00b397] transition-all duration-300"
+              onclick="alert('Shopping cart initialized')"
+              style="font-family: 'Space Grotesk', Arial, sans-serif; font-weight: 400;"
+      >Shop Now</button>
+    </div>
+  </section>
+
+  <!-- Featured Categories -->
+  <section class="container mx-auto py-16">
+    <h2 class="text-4xl font-bold text-center text-[#ffffff] mb-10">Featured</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+      <!-- Food Category -->
+      <div class="transform transition-all duration-300 hover:scale-105 bg-[#000000]">
+        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=400&h=400&q=80" alt="Vegetables" class="w-full">
+        <div class="p-6">
+          <h3 class="text-xl text-[#ffffff] mb-3">Fresh Vegetables</h3>
+          <p class="text-sm text-[#80c0b0] mb-5">Seasonal selections handpicked for fresh</p>
+          <a href="foods.html" class="cta-button bg-[#ff8526] hover:bg-[#ffbc5d] w-full">Browse Foods</a>
+        </div>
+      </div>
+
+      <!-- Drinks Category -->
+      <div class="transform transition-all duration-300 hover:scale-105 bg-[#f8faf9]">
+        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=400&h=400&q=80" alt="Tea" class="w-full">
+        <div class="p-6">
+          <h3 class="text-xl text-[#08372b] mb-3">Artisanal Tea</h3>
+          <p class="text-sm text-[#f79696] mb-5">Handcrafted blends for every palate</p>
+          <a href="drinks.html" class="cta-button bg-[#c13d14] hover:bg-[#ff7380] w-full">Browse Drinks</a>
+        </div>
+      </div>
+
+      <!-- New Arrivals -->
+      <div class="transform transition-all duration-300 hover:scale-105 bg-[#000000]">
+        <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&w=400&h=400&q=80" alt="Snacks" class="w-full">
+        <div class="p-6">
+          <h3 class="text-xl text-[#ffffff] mb-3">New Arrivals</h3>
+          <p class="text-sm text-[#f8faf9] mb-5">Exclusive items just for you</p>
+          <a href="new-arrivals.html" class="cta-button bg-[#ed2525] hover:bg-[#ff4a69] w-full">Discover New</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="container mx-auto py-12 bg-[#08372b]">
+    <div class="flex justify-center">
+      <div class="w-2/3 p-10 rounded-lg bg-[#ffffff]">
+        <h2 class="text-3xl text-center mb-10 text-[#111111]">Subscribe to Our Newsletter</h2>
+        <p class="text-center mb-8 text-sm text-[#111111]">Get 15% off your first order with our fresh produce updates!</p>
+        <form class="flex flex-col sm:flex-row gap-4">
+          <input type="email" placeholder="Enter your email" class="w-full sm:w-3/4 p-4 rounded">
+          <button class="cta-button w-full sm:w-1/2 bg-[#ff8526] hover:bg-[#ef6a4c]">Join Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#111111] text-[#ffffff] text-center py-10">
+    <div class="container mx-auto max-w-7xl px-6">
+      <span class="text-xl font-semibold text-center mb-8">FreshBites Market</span>
+      <div class="flex justify-center mb-12">
+        <a href="#" class="mx-2">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#008060" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.22 11.75a.75.75 0 0 1-1.23.72c-2.12 1.15-4.55 3.29-4.55 5.71 0 2.48 2.04 4.5 4.5 4.5s2.03-2.02 4.5-4.5a.75.75 0 0 1 0-1.5z"/>
+            <path d="M7.41 11.75A5.26 5.26 0 0 1 6 15.73a.5.5 0 1 1 0 1A.75.75 0 1 0 7.41 11.75z"/>
+            <path d="M18.27 11.75A11.72 11.72 0 0 1 3.73 11.75"/>
+          </svg>
+        </a>
+        <a href="#" class="mx-2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#08372b" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM14 8v6h6v-2h-4V8h-2v6h-2V8h2v6h2z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <div class="mb-4 sm:mb-0">
+          <h4 class="text-lg font-medium mb-5 text-[#c13d14]">Quick Links</h4>
+          <ul class="leading-relaxed text-xs text-[#80c0b0]">
+            <li>Order Tracking</li>
+            <li>Payment Methods</li>
+            <li>Delivery Areas</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="mb-4 sm:mb-0">
+          <h4 class="text-lg font-medium mb-5 text-[#f79696]">Account</h4>
+          <ul class="leading-relaxed text-xs text-[#80c0b0]">
+            <li>My Account</li>
+            <li>Wish List</li>
+            <li>Order History</li>
+            <li>Newsletter Preferences</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="text-sm text-[#80c0b0]">© 2025 FreshBites Market. All rights reserved</p>
+  </footer>
+</body>
+</html>
