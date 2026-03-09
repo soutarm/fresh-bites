@@ -129,7 +129,10 @@
         </div>
       </div>
     </div>
-    <p class="text-sm text-[#80c0b0]">© 2025 FreshBites Market. All rights reserved</p>
+    <p class="text-sm text-[#80c0b0]">© <span id="current-year">2026</span> FreshBites Market. All rights reserved</p>
   </footer>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
